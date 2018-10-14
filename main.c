@@ -3,7 +3,7 @@
 #include "timex.h"
 
 /* set interval to 1 second */
-#define INTERVAL (1U * US_PER_SEC) #спецификатор U - константа типа unsigned int
+#define INTERVAL (1U * US_PER_SEC) /* спецификатор U - константа типа unsigned int */
 
 int main(void)
 {
