@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "xtimer.h"
+#include "xtimer.h" /*для xtimer_   */
 #include "timex.h"
 
 /* set interval to 1 second */
@@ -7,7 +7,7 @@
 
 int main(void)
 {
-    xtimer_ticks32_t last_wakeup = xtimer_now();
+    xtimer_ticks32_t last_wakeup = xtimer_now(); /*xtimer_now() to get current system time in microseconds*/
 
     while(1) {
         xtimer_periodic_wakeup(&last_wakeup, INTERVAL);
